@@ -77,7 +77,13 @@ class QuizGame:
         print("퀴즈를 추가했습니다.")
 
     def list_quizzes(self) -> None:
-        print("퀴즈 목록 준비 중입니다.")
+        if not self.quizzes:
+            print("등록된 퀴즈가 없습니다.")
+            return
+
+        print(f"\n등록된 퀴즈 목록 (총 {len(self.quizzes)}개)")
+        for number, quiz in enumerate(self.quizzes, start=1):
+            print(f"{number}. {quiz.question}")
 
     def show_score(self) -> None:
         print("점수 확인 준비 중입니다.")
