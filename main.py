@@ -22,6 +22,7 @@ class QuizGame:
 
     def __init__(self):
         self.quizzes = default_quizzes()
+        self.best_score: int | None = None
 
     def show_menu(self) -> None:
         print("\n=== Python 기초 퀴즈 ===")
@@ -67,6 +68,9 @@ class QuizGame:
                 print(f"오답입니다. 정답은 {quiz.answer}번입니다.")
 
         print(f"\n결과: {len(self.quizzes)}문제 중 {correct}문제 정답")
+            if self.best_score is None or correct > self.best_score:
+        self.best_score = correct
+        print("새 최고 기록입니다!")
 
     def add_quiz(self) -> None:
         question = read_text("문제: ")
@@ -86,7 +90,10 @@ class QuizGame:
             print(f"{number}. {quiz.question}")
 
     def show_score(self) -> None:
-        print("점수 확인 준비 중입니다.")
+        if self.best_score is None:
+            print("아직 퀴즈를 풀지 않았습니다.")
+        else:
+            print(f"최고 기록: {self.best_score}개 정답")
 
         
 def show_menu() -> None:
