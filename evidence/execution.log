@@ -1,0 +1,31 @@
+Script started on Wed Nov 11 11:34:31 2026
+[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hppwd[?2004l
+/Users/dhjung/CODYSSEY/quiz-game
+[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit p  g  ppython 00versi       --version[?2004l
+Python 3.10.11
+[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit co  ad   diff 0c  --cached -- f qui    quiz0 -game/R           /
+[JApplications/  System/        Volumes/       cores/         etc@           opt/           sbin/          usr/           
+Library/       Users/         bin/           dev/           home@          private/       tmp@           var@           [A[A[0m[27m[24m[43Cgit diff --cached -- /[KR
+[J[A[66CE   ./E   README.md[1m [0m[0m [?2004l
+[J[?1h=[1mdiff --git a/README.md b/README.md[m[m
+[1mnew file mode 100644[m[m
+[1mindex 0000000..2b4d245[m[m
+[1m--- /dev/null[m[m
+[1m+++ b/README.md[m[m
+[36m@@ -0,0 +1,65 @@[m[m
+[32m+[m[32m# Python 기초 퀴즈[m[m
+[32m+[m[m
+[32m+[m[32m## 프로젝트 개요[m[m
+[32m+[m[m
+[32m+[m[32m터미널에서 객관식 퀴즈를 풀고, 문제를 등록하고, 최고 기록을 확인하는 Python 콘솔 게임입니다. `Quiz`는 개별 문제를 표현하고, `QuizGame`은 메뉴와 [m
+[32m[m[32m게임 진행, 파일 저장을 관리합니다.[m[m
+[32m+[m[m
+[32m+[m[32m## 퀴즈 주제와 선정 이유[m[m
+[32m+[m[m
+[32m+[m[32m주제는 **Python 기초 문법**입니다. 퀴즈 게임을 구현할 때 사용하는 자료형, 입력 함수, 리스트, 연산자, 함수의 반환값을 문제로 다시 확인할 수 있어 [m
+[32m[m[32m선택했습니다. 기본 퀴즈는 5문제입니다.[m[m
+[32m+[m[m
+[32m+[m[32m## 실행 방법[m[m
+[32m+[m[m
+:[K[K[?1l>[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit add -- qu   README.md[1m [0m[0m [?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit ./ / .  aad   dd ../E g e   /evidence[1m/[0m
