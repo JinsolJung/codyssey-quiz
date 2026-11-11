@@ -44,7 +44,22 @@ class QuizGame:
         print("퀴즈 게임을 종료합니다.")
 
     def play(self) -> None:
-        print("퀴즈 풀기 준비 중입니다.")
+        if not self.quizzes:
+            print("등록된 퀴즈가 없습니다.")
+            return
+
+        correct = 0
+        for number, quiz in enumerate(self.quizzes, start=1):
+            print(f"\n[문제 {number}]")
+            quiz.display()
+            selected = read_number("정답 번호 (1~4): ", 1, 4)
+            if quiz.is_correct(selected):
+                correct += 1
+                print("정답입니다!")
+            else:
+                print(f"오답입니다. 정답은 {quiz.answer}번입니다.")
+
+        print(f"\n결과: {len(self.quizzes)}문제 중 {correct}문제 정답")
 
     def add_quiz(self) -> None:
         print("퀴즈 추가 준비 중입니다.")
@@ -64,18 +79,6 @@ def show_menu() -> None:
     print("4. 점수 확인")
     print("5. 종료")
 
-
-def run() -> None:
-    try:
-        while True:
-            show_menu()
-            selected = read_number("선택: ", 1, 5)
-            if selected == 5:
-                break
-            print("준비 중인 기능입니다.")
-    except (KeyboardInterrupt, EOFError):
-        print("\n입력이 종료되었습니다.")
-    print("퀴즈 게임을 종료합니다.")
 
 if __name__ == "__main__":
     QuizGame().run()
