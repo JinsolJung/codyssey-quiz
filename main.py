@@ -1,4 +1,4 @@
-from quiz import default_quizzes
+from quiz import Quiz, default_quizzes
 def read_number(prompt: str, minimum: int, maximum: int) -> int:
     while True:
         try:
@@ -9,6 +9,13 @@ def read_number(prompt: str, minimum: int, maximum: int) -> int:
             if minimum <= number <= maximum:
                 return number
         print(f"{minimum}~{maximum} 사이의 숫자를 입력하세요.")
+
+def read_text(prompt: str) -> str:
+    while True:
+        value = input(prompt).strip()
+        if value:
+            return value
+        print("입력을 비워 둘 수 없습니다.")
 
 class QuizGame:
     """메뉴와 게임 상태를 관리한다."""
@@ -62,7 +69,12 @@ class QuizGame:
         print(f"\n결과: {len(self.quizzes)}문제 중 {correct}문제 정답")
 
     def add_quiz(self) -> None:
-        print("퀴즈 추가 준비 중입니다.")
+        question = read_text("문제: ")
+        choices = [read_text(f"선택지 {number}: ") for number in range(1, 5)]
+        answer = read_number("정답 번호 (1~4): ", 1, 4)
+
+        self.quizzes.append(Quiz(question, choices, answer))
+        print("퀴즈를 추가했습니다.")
 
     def list_quizzes(self) -> None:
         print("퀴즈 목록 준비 중입니다.")
