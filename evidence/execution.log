@@ -1,54 +1,59 @@
-Script started on Wed Nov 11 11:34:31 2026
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hppwd[?2004l
+$ pwd
 /Users/dhjung/CODYSSEY/quiz-game
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit p  g  ppython 00versi       --version[?2004l
+
+$ python --version
 Python 3.10.11
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit co  ad   diff 0c  --cached -- f qui    quiz0 -game/R           /
-[JApplications/  System/        Volumes/       cores/         etc@           opt/           sbin/          usr/           
-Library/       Users/         bin/           dev/           home@          private/       tmp@           var@           [A[A[0m[27m[24m[43Cgit diff --cached -- /[KR
-[J[A[66CE   ./E   README.md[1m [0m[0m [?2004l
-[J[?1h=[1mdiff --git a/README.md b/README.md[m[m
-[1mnew file mode 100644[m[m
-[1mindex 0000000..2b4d245[m[m
-[1m--- /dev/null[m[m
-[1m+++ b/README.md[m[m
-[36m@@ -0,0 +1,65 @@[m[m
-[32m+[m[32m# Python 기초 퀴즈[m[m
-[32m+[m[m
-[32m+[m[32m## 프로젝트 개요[m[m
-[32m+[m[m
-[32m+[m[32m터미널에서 객관식 퀴즈를 풀고, 문제를 등록하고, 최고 기록을 확인하는 Python 콘솔 게임입니다. `Quiz`는 개별 문제를 표현하고, `QuizGame`은 메뉴와 [m
-[32m[m[32m게임 진행, 파일 저장을 관리합니다.[m[m
-[32m+[m[m
-[32m+[m[32m## 퀴즈 주제와 선정 이유[m[m
-[32m+[m[m
-[32m+[m[32m주제는 **Python 기초 문법**입니다. 퀴즈 게임을 구현할 때 사용하는 자료형, 입력 함수, 리스트, 연산자, 함수의 반환값을 문제로 다시 확인할 수 있어 [m
-[32m[m[32m선택했습니다. 기본 퀴즈는 5문제입니다.[m[m
-[32m+[m[m
-[32m+[m[32m## 실행 방법[m[m
-[32m+[m[m
-:[K[K[?1l>[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit add -- qu   README.md[1m [0m[0m [?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit ./ / .  aad   dd ../E g e   /evidence[1m/[0m[0m/R l execution.log[1m [0m[0m [?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit commit --only -n        -m "Do   [7m"Docs: 퀴즈 프로젝트 README 추가" [27m[34D[27m"[27mD[27mo[27mc[27ms[27m:[27m [27m퀴[27m[27m즈[27m[27m [27m프[27m[27m로[27m[27m젝[27m[27m트[27m[27m [27mR[27mE[27mA[27mD[27mM[27mE[27m [27m추[27m[27m가[27m[27m"[27m [?2004l
+
+$ git diff --cached -- README.md
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..2b4d245
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,65 @@
++# Python 기초 퀴즈
++
++## 프로젝트 개요
++
++터미널에서 객관식 퀴즈를 풀고, 문제를 등록하고, 최고 기록을 확인하는 Python 콘솔 게임입니다. `Quiz`는 개별 문제를 표현하고, `QuizGame`은 메뉴와
+게임 진행, 파일 저장을 관리합니다.
++
++## 퀴즈 주제와 선정 이유
++
++주제는 **Python 기초 문법**입니다. 퀴즈 게임을 구현할 때 사용하는 자료형, 입력 함수, 리스트, 연산자, 함수의 반환값을 문제로 다시 확인할 수 있어
+선택했습니다. 기본 퀴즈는 5문제입니다.
++
++## 실행 방법
++
+
+$ git add -- README.md
+
+$ git add ./evidence/execution.log
+
+$ git commit -m "Docs: 퀴즈 프로젝트 README 추가"
 [main (root-commit) 5e8d4f9] Docs: 퀴즈 프로젝트 README 추가
  4 files changed, 687 insertions(+)
  create mode 100644 .gitignore
  create mode 100644 GUIDE.md
  create mode 100644 README.md
  create mode 100644 evidence/execution.log
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit push origin main[?2004l
+
+$ git push origin main
 Enumerating objects: 7, done.
-Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Counting objects: 100% (7/7), done.
 Delta compression using up to 8 threads
-Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
-Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 10.41 KiB | 10.41 MiB/s, done.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 10.41 KiB | 10.41 MiB/s, done.
 Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/JinsolJung/codyssey-quiz.git
  * [new branch]      main -> main
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004httut tut  ttouch main.py[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hlls[?2004l
-GUIDE.md	README.md	evidence	main.py
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hppython m main.py[1m [0m[0m [?2004l
+
+$ touch main.py
+
+$ ls
+GUIDE.md        README.md       evidence        main.py
+
+$ python main.py
 
 === Python 기초 퀴즈 ===
 1. 퀴즈 풀기
@@ -94,15 +99,21 @@ GUIDE.md	README.md	evidence	main.py
 5. 종료
 선택: 5
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit add -0  - main.py[1m [0m[0m main.py [8Dmain.py [8Dmain.py [8D[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h햣 ㅊ    ggit commit -m [7m"Feat: 콘솔 메뉴와 숫자 입력 구현"[27m[34D[27m"[27mF[27me[27ma[27mt[27m:[27m [27m콘[27m[27m솔[27m[27m [27m메[27m[27m뉴[27m[27m와[27m[27m [27m숫[27m[27m자[27m[27m [27m입[27m[27m력[27m[27m [27m구[27m[27m현[27m[27m"[?2004l
+
+$ git add main.py
+
+$ git commit -m "Feat: 콘솔 메뉴와 숫자 입력 구현"
 [main 0a19357] Feat: 콘솔 메뉴와 숫자 입력 구현
  1 file changed, 36 insertions(+)
  create mode 100644 main.py
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004httouch quiz.py[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggjg  ggog  ttou t  touch quiz.py[13Dgit commit -m "Feat: 콘솔 메뉴와 숫자 입력 구현"[44Dadd main.py                                 [33D[15Dpython main.py        quiz.py[1m [0m[0m [?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hpython quiz.py[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hpython quiz.py[14Dtouch quiz.py [13Dgit commit -m "Feat: 콘솔 메뉴와 숫자 입력 구현"[44Dadd main.py                                 [33D[15Dpython main.py [?2004l
+
+$ touch quiz.py
+
+$ python quiz.py
+
+$ python quiz.py
+
+$ python main.py
 
 === Python 기초 퀴즈 ===
 1. 퀴즈 풀기
@@ -110,7 +121,7 @@ GUIDE.md	README.md	evidence	main.py
 3. 퀴즈 목록
 4. 점수 확인
 5. 종료
-선택: ` 1
+선택: 1
 준비 중인 기능입니다.
 
 === Python 기초 퀴즈 ===
@@ -121,23 +132,24 @@ GUIDE.md	README.md	evidence	main.py
 5. 종료
 선택: 5
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h[7mPYTHONPATH=quiz-game python3 -c 'from quiz import Quiz; q = Quiz("빈 리스트는?", ["[]", "{}", "()", "0"[7m][7m, 1); q.display(); print(q.is_correct(1), q.is_correct(2))'[27m[K[A[17D[27mP[27mY[27mT[27mH[27mO[27mN[27mP[27mA[27mT[27mH[27m=[27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m'[27mf[27mr[27mo[27mm[27m [27mq[27mu[27mi[27mz[27m [27mi[27mm[27mp[27mo[27mr[27mt[27m [27mQ[27mu[27mi[27mz[27m;[27m [27mq[27m [27m=[27m [27mQ[27mu[27mi[27mz[27m([27m"[27m빈[27m[27m [27m리[27m[27m스[27m[27m트[27m[27m는[27m[27m?[27m"[27m,[27m [27m[[27m"[27m[[27m][27m"[27m,[27m [27m"[27m{[27m}[27m"[27m,[27m [27m"[27m([27m)[27m"[27m,[27m [27m"[27m0[27m"][27m,[27m [27m1[27m)[27m;[27m [27mq[27m.[27md[27mi[27ms[27mp[27ml[27ma[27my[27m([27m)[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27mq[27m.[27mi[27ms[27m_[27mc[27mo[27mr[27mr[27me[27mc[27mt[27m([27m1[27m)[27m,[27m [27mq[27m.[27mi[27ms[27m_[27mc[27mo[27mr[27mr[27me[27mc[27mt[27m([27m2[27m)[27m)[27m'[?2004l
+
+$ PYTHONPATH=quiz-game python3 -c 'from quiz import Quiz; q = Quiz("빈 리스트는?", ["[]", "{}", "()", "0"], 1); q.display(); print(q.is_correct(1), q.is_correct(2))'
 빈 리스트는?
   1. []
   2. {}
   3. ()
   4. 0
 True False
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hPYTHONPATH=quiz-game python3 -c 'from quiz import Quiz; q = Quiz("빈 리스트는?", ["[]", "{}", "()", "0"], 1); q.display(); print(q.is_correct(1), q.is_correct(2))'[K[16D[23D[13D[A[144C[12D[38D[K[1B[K[A[43CPYTHONPATH=quiz-game python3 -c 'from quiz import Quiz; q = Quiz("빈 리스트는?", ["[]", "{}", "()", "0"], 1); q.display(); print(q.is_correct(1), q.is_correct(2))'[K[A[17D[K[1B[K[A[43C[?2004l[1B[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hcclc  [7mPYTHONPATH=quiz-game python3 -c 'from quiz import default_quizzes; print(len(default_quizzes()))'[27m[97D[27mP[27mY[27mT[27mH[27mO[27mN[27mP[27mA[27mT[27mH[27m=[27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m'[27mf[27mr[27mo[27mm[27m [27mq[27mu[27mi[27mz[27m [27mi[27mm[27mp[27mo[27mr[27mt[27m [27md[27me[27mf[27ma[27mu[27ml[27mt[27m_[27mq[27mu[27mi[27mz[27mz[27me[27ms[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27ml[27me[27mn[27m([27md[27me[27mf[27ma[27mu[27ml[27mt[27m_[27mq[27mu[27mi[27mz[27mz[27me[27ms[27m([27m)[27m)[27m)[27m'[?2004l
+
+$ PYTHONPATH=quiz-game python3 -c 'from quiz import default_quizzes; print(len(default_quizzes()))'
 Traceback (most recent call last):
   File "<string>", line 1, in <module>
   File "/Users/dhjung/CODYSSEY/quiz-game/quiz.py", line 27
     return [
     ^
 IndentationError: expected an indented block after function definition on line 26
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hPYTHONPATH=quiz-game python3 -c 'from quiz import default_quizzes; print(len(default_quizzes()))'[?2004l
+
+$ PYTHONPATH=quiz-game python3 -c 'from quiz import default_quizzes; print(len(default_quizzes()))'
 Traceback (most recent call last):
   File "<string>", line 1, in <module>
   File "/Users/dhjung/CODYSSEY/quiz-game/quiz.py", line 1, in <module>
@@ -145,7 +157,8 @@ Traceback (most recent call last):
   File "/Users/dhjung/CODYSSEY/quiz-game/quiz.py", line 26, in Quiz
     def default_quizzes() -> list[Quiz]:
 NameError: name 'Quiz' is not defined. Did you mean: 'quit'?
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hPYTHONPATH=quiz-game python3 -c 'from quiz import default_quizzes; print(len(default_quizzes()))'[?2004l
+
+$ PYTHONPATH=quiz-game python3 -c 'from quiz import default_quizzes; print(len(default_quizzes()))'
 Traceback (most recent call last):
   File "<string>", line 1, in <module>
   File "/Users/dhjung/CODYSSEY/quiz-game/quiz.py", line 1, in <module>
@@ -153,7 +166,8 @@ Traceback (most recent call last):
   File "/Users/dhjung/CODYSSEY/quiz-game/quiz.py", line 26, in Quiz
     def default_quizzes() -> list[Quiz]:
 NameError: name 'Quiz' is not defined. Did you mean: 'quit'?
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hPYTHONPATH=quiz-game python3 -c 'from quiz import default_quizzes; print(len(default_quizzes()))'[?2004l
+
+$ PYTHONPATH=quiz-game python3 -c 'from quiz import default_quizzes; print(len(default_quizzes()))'
 Traceback (most recent call last):
   File "<string>", line 1, in <module>
   File "/Users/dhjung/CODYSSEY/quiz-game/quiz.py", line 1, in <module>
@@ -161,14 +175,18 @@ Traceback (most recent call last):
   File "/Users/dhjung/CODYSSEY/quiz-game/quiz.py", line 26, in Quiz
     def default_quizzes() -> list[Quiz]:
 NameError: name 'Quiz' is not defined. Did you mean: 'quit'?
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hPYTHONPATH=quiz-game python3 -c 'from quiz import default_quizzes; print(len(default_quizzes()))'[?2004l
+
+$ PYTHONPATH=quiz-game python3 -c 'from quiz import default_quizzes; print(len(default_quizzes()))'
 5
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h햣 ㅁ    ggit add quiz.py[1m [0m[0m [?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hddit  d  ggit commit 0m  -m "[7mFeat: Python 기초 퀴즈 5문제 추가[27m[7m[27m[33D[27mF[27me[27ma[27mt[27m:[27m [27mP[27my[27mt[27mh[27mo[27mn[27m [27m기[27m[27m초[27m[27m [27m퀴[27m[27m즈[27m[27m [27m5[27m문[27m[27m제[27m[27m [27m추[27m[27m가[27m"[?2004l
+
+$ git add quiz.py
+
+$ git commit -m "Feat: Python 기초 퀴즈 5문제 추가"
 [main c1aa975] Feat: Python 기초 퀴즈 5문제 추가
  1 file changed, 34 insertions(+)
  create mode 100644 quiz.py
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hppython main    3 main.pyt [?2004l
+
+$ python3 main.py
 
 === Python 기초 퀴즈 ===
 1. 퀴즈 풀기
@@ -214,21 +232,26 @@ NameError: name 'Quiz' is not defined. Did you mean: 'quit'?
 5. 종료
 선택: 5
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggtg  ggit add main.py[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit commit- = -   -m "[7mRefactor: QuizGame에 메뉴와 문제 목록 모으기"[27m[45D[27mR[27me[27mf[27ma[27mc[27mt[27mo[27mr[27m:[27m [27mQ[27mu[27mi[27mz[27mG[27ma[27mm[27me[27m에[27m[27m [27m메[27m[27m뉴[27m[27m와[27m[27m [27m문[27m[27m제[27m[27m [27m목[27m[27m록[27m[27m [27m모[27m[27m으[27m[27m기[27m[27m"[?2004l
+
+$ git add main.py
+
+$ git commit -m "Refactor: QuizGame에 메뉴와 문제 목록 모으기"
 [main 0f503ff] Refactor: QuizGame에 메뉴와 문제 목록 모으기
  1 file changed, 47 insertions(+), 2 deletions(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit status --  [?2004l
+
+$ git status
 On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   evidence/execution.log[m
+        modified:   evidence/execution.log
 
 no changes added to commit (use "git add" and/or "git commit -a")
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit checkout -b fea   feature/quiz-ply ay[?2004l
+
+$ git checkout -b feature/quiz-play
 Switched to a new branch 'feature/quiz-play'
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hppython3 py  main.py[1m [0m[0m [?2004l
+
+$ python3 main.py
 
 === Python 기초 퀴즈 ===
 1. 퀴즈 풀기
@@ -253,7 +276,7 @@ input()이 반환하는 자료형은?
   2. bool
   3. str
   4. list
-정답 번호 (1~4): e 5
+정답 번호 (1~4): 5
 1~4 사이의 숫자를 입력하세요.
 정답 번호 (1~4): 1
 오답입니다. 정답은 3번입니다.
@@ -295,27 +318,33 @@ input()이 반환하는 자료형은?
 5. 종료
 선택: 5
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit add --   main.py[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggi t g  ggit commit  -m "[7m"Feat: 퀴즈 출제와 채점 구현"[27m[29D[27m"[27mF[27me[27ma[27mt[27m:[27m [27m퀴[27m[27m즈[27m[27m [27m출[27m[27m제[27m[27m와[27m[27m [27m채[27m[27m점[27m[27m [27m구[27m[27m현[27m[27m "[5C[P[28C [30D[?2004l
+
+$ git add main.py
+
+$ git commit  -m "Feat: 퀴즈 출제와 채점 구현"
 [feature/quiz-play 603fb59] Feat: 퀴즈 출제와 채점 구현
  1 file changed, 16 insertions(+), 13 deletions(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hcchc  ggit checkout main[?2004l
-M	evidence/execution.log
+
+$ git checkout main
+M       evidence/execution.log
 Switched to branch 'main'
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit merge - fea   fea   -no  -no-ff feature/zu  quiz-ply ay -m [7m"Merge: 퀴즈 풀기 기능 병합"[27m[28D[27m"[27mM[27me[27mr[27mg[27me[27m:[27m [27m퀴[27m[27m즈[27m[27m [27m풀[27m[27m기[27m[27m [27m기[27m[27m능[27m[27m [27m병[27m[27m합[27m[27m"[?2004l
+
+$ git merge --no-ff feature/quiz-play -m "Merge: 퀴즈 풀기 기능 병합"
 Merge made by the 'ort' strategy.
- main.py | 29 [32m++++++++++++++++[m[31m-------------[m
+ main.py | 29 ++++++++++++++++-------------
  1 file changed, 16 insertions(+), 13 deletions(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit log --online    eline --g     e 00  --grapgh  h --all ==  -- 10[?2004l
-[?1h=*   [33m987ad5c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Merge: 퀴즈 풀기 기능 병합[m
-[31m|[m[32m\[m  [m
-[31m|[m * [33m603fb59[m[33m ([m[1;32mfeature/quiz-play[m[33m)[m Feat: 퀴즈 출제와 채점 구현[m
-[31m|[m[31m/[m  [m
-* [33m0f503ff[m Refactor: QuizGame에 메뉴와 문제 목록 모으기[m
-* [33mc1aa975[m Feat: Python 기초 퀴즈 5문제 추가[m
-* [33m0a19357[m Feat: 콘솔 메뉴와 숫자 입력 구현[m
-* [33m5e8d4f9[m[33m ([m[1;31morigin/main[m[33m)[m Docs: 퀴즈 프로젝트 README 추가[m
-[K[?1l>[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hppython main.py[1m [0m[0m [?2004l
+
+$ git log --oneline --graph --all -10
+*   987ad5c (HEAD -> main) Merge: 퀴즈 풀기 기능 병합
+|\
+| * 603fb59 (feature/quiz-play) Feat: 퀴즈 출제와 채점 구현
+|/
+* 0f503ff Refactor: QuizGame에 메뉴와 문제 목록 모으기
+* c1aa975 Feat: Python 기초 퀴즈 5문제 추가
+* 0a19357 Feat: 콘솔 메뉴와 숫자 입력 구현
+* 5e8d4f9 (origin/main) Docs: 퀴즈 프로젝트 README 추가
+
+$ python main.py
 
 === Python 기초 퀴즈 ===
 1. 퀴즈 풀기
@@ -349,7 +378,7 @@ input()이 반환하는 자료형은?
   2. {}
   3. ()
   4. ""
-정답 번호 (1~4): 
+정답 번호 (1~4):
 1~4 사이의 숫자를 입력하세요.
 정답 번호 (1~4): 1
 정답입니다!
@@ -369,7 +398,7 @@ input()이 반환하는 자료형은?
   2. return
   3. print
   4. import
-정답 번호 (1~4): 1 1
+정답 번호 (1~4): 1
 오답입니다. 정답은 2번입니다.
 
 결과: 5문제 중 1문제 정답
@@ -382,7 +411,8 @@ input()이 반환하는 자료형은?
 5. 종료
 선택: 5
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hpython main.py[?2004l
+
+$ python main.py
 
 === Python 기초 퀴즈 ===
 1. 퀴즈 풀기
@@ -391,7 +421,7 @@ input()이 반환하는 자료형은?
 4. 점수 확인
 5. 종료
 선택: 2
-문제: dudghk      영화 기생충의 ' 감독은 누구인가요?
+문제: 영화 기생충의 감독은 누구인가요?
 선택지 1: 봉준호
 선택지 2: 한석진
 선택지 3: 정다혜
@@ -407,40 +437,51 @@ input()이 반환하는 자료형은?
 5. 종료
 선택: 5
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h햣   ggit add main.py[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit commit -m [7m"Feat: 문제와 선택지를 입력받아 퀴즈 추가"[27m[42D[27m"[27mF[27me[27ma[27mt[27m:[27m [27m문[27m[27m제[27m[27m와[27m[27m [27m선[27m[27m택[27m[27m지[27m[27m를[27m[27m [27m입[27m[27m력[27m[27m받[27m[27m아[27m[27m [27m퀴[27m[27m즈[27m[27m [27m추[27m[27m가[27m[27m"[?2004l
+
+$ git add main.py
+
+$ git commit -m "Feat: 문제와 선택지를 입력받아 퀴즈 추가"
 [main ae3bf42] Feat: 문제와 선택지를 입력받아 퀴즈 추가
  1 file changed, 14 insertions(+), 2 deletions(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hgit commit -m "Feat: 문제와 선택지를 입력받아 퀴즈 추가"[52Dadd main.py                                         [41D[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hgit add main.py[11Dcommit -m "Feat: 문제와 선택지를 입력받아 퀴즈 추가"[7m"Feat: 퀴즈 목록과 문제 수 출력" [27m[33D[27m"[27mF[27me[27ma[27mt[27m:[27m [27m퀴[27m[27m즈[27m[27m [27m목[27m[27m록[27m[27m과[27m[27m [27m문[27m[27m제[27m[27m [27m수[27m[27m [27m출[27m[27m력[27m[27m"[27m                                                                  [7m"Feat: 퀴즈 목록과 문제 수 출력" [27m[33D[27m"[27mF[27me[27ma[27mt[27m:[27m [27m퀴[27m[27m즈[27m[27m [27m목[27m[27m록[27m[27m과[27m[27m [27m문[27m[27m제[27m[27m [27m수[27m[27m [27m출[27m[27m력[27m[27m"[27m [?2004l
+
+$ git add main.py
+
+$ git commit -m "Feat: 퀴즈 목록과 문제 수 출력"
 [main 9784d22] Feat: 퀴즈 목록과 문제 수 출력
  1 file changed, 7 insertions(+), 1 deletion(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hgit commit -m "Feat: 퀴즈 목록과 문제 수 출력" [43Dadd main.py                               [31D[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hgit add main.py[15D               [15D햣   ggit commti   it -m [7m"Feat: 최고 정답 수 갱신과 조회 구현"[27m[37D[27m"[27mF[27me[27ma[27mt[27m:[27m [27m최[27m[27m고[27m[27m [27m정[27m[27m답[27m[27m [27m수[27m[27m [27m갱[27m[27m신[27m[27m과[27m[27m [27m조[27m[27m회[27m[27m [27m구[27m[27m현[27m[27m"[?2004l
+
+$ git add main.py
+
+$ git commit -m "Feat: 최고 정답 수 갱신과 조회 구현"
 [main 037ccde] Feat: 최고 정답 수 갱신과 조회 구현
  1 file changed, 8 insertions(+), 1 deletion(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hppython main.py[?2004l
+
+$ python main.py
   File "/Users/dhjung/CODYSSEY/quiz-game/main.py", line 82
     if self.best_score is None or correct > self.best_score:
 IndentationError: unexpected indent
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hpython main.py[?2004l
+
+$ python main.py
   File "/Users/dhjung/CODYSSEY/quiz-game/main.py", line 149
     def save_state(self) -> bool:
                                  ^
 IndentationError: unindent does not match any outer indentation level
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hpython main.py[?2004l
+
+$ python main.py
 Traceback (most recent call last):
   File "/Users/dhjung/CODYSSEY/quiz-game/main.py", line 179, in <module>
     QuizGame().run()
   File "/Users/dhjung/CODYSSEY/quiz-game/main.py", line 44, in run
     self.load_state()
 AttributeError: 'QuizGame' object has no attribute 'load_state'
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hpython main.py[?2004l
+
+$ python main.py
   File "/Users/dhjung/CODYSSEY/quiz-game/main.py", line 142
     state = {
     ^
 IndentationError: expected an indented block after function definition on line 141
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hpython main.py[?2004l
+
+$ python main.py
 
 === Python 기초 퀴즈 ===
 1. 퀴즈 풀기
@@ -456,7 +497,7 @@ len([10, 20, 30])의 결과는?
   2. 3
   3. 4
   4. 30
-정답 번호 (1~4): 3 2
+정답 번호 (1~4): 2
 정답입니다!
 
 [문제 2]
@@ -506,7 +547,7 @@ input()이 반환하는 자료형은?
 4. 점수 확인
 5. 종료
 선택: 2
-문제: rltod     ㄱ 기생ㅊ   생ㅇㅇ   충의 감독은?
+문제: ㄱ기생생ㅇ충의 감독은?
 선택지 1: 봉준호
 선택지 2: 정다혜
 선택지 3: 한석진
@@ -522,7 +563,8 @@ input()이 반환하는 자료형은?
 5. 종료
 선택: 5
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hpython main.py[?2004l
+
+$ python main.py
 
 === Python 기초 퀴즈 ===
 1. 퀴즈 풀기
@@ -557,11 +599,13 @@ input()이 반환하는 자료형은?
 5. 종료
 선택: 5
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h[7mpython3 -m json.tool --no-ensure-ascii quiz-game/state.json[27m[59D[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mm[27m [27mj[27ms[27mo[27mn[27m.[27mt[27mo[27mo[27ml[27m [27m-[27m-[27mn[27mo[27m-[27me[27mn[27ms[27mu[27mr[27me[27m-[27ma[27ms[27mc[27mi[27mi[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[?2004l
+
+$ python3 -m json.tool --no-ensure-ascii quiz-game/state.json
 usage: python -m json.tool [-h] [--sort-keys] [--no-ensure-ascii] [--json-lines] [--indent INDENT | --tab | --no-indent | --compact]
                            [infile] [outfile]
 python -m json.tool: error: argument infile: can't open 'quiz-game/state.json': [Errno 2] No such file or directory: 'quiz-game/state.json'
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h[7mpython3 -m json.tool --no-ensure-ascii[27m[38D[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mm[27m [27mj[27ms[27mo[27mn[27m.[27mt[27mo[27mo[27ml[27m [27m-[27m-[27mn[27mo[27m-[27me[27mn[27ms[27mu[27mr[27me[27m-[27ma[27ms[27mc[27mi[27mi qui   state.json[1m [0m[0m [?2004l
+
+$ python3 -m json.tool --no-ensure-ascii state.json
 {
     "quizzes": [
         {
@@ -627,9 +671,11 @@ python -m json.tool: error: argument infile: can't open 'quiz-game/state.json': 
     ],
     "best_score": 4
 }
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h[7mpython3 quiz-game/main.py < /dev/null[27m[37D[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27mm[27ma[27mi[27mn[27m.[27mp[27my[27m [27m<[27m [27m/[27md[27me[27mv[27m/[27mn[27mu[27ml[27ml[?2004l
+
+$ python3 quiz-game/main.py < /dev/null
 /Library/Frameworks/Python.framework/Versions/3.10/bin/python3: can't open file '/Users/dhjung/CODYSSEY/quiz-game/quiz-game/main.py': [Errno 2] No such file or directory
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hㅔㅛㅅ      ppython3 mainlpy   .py[?2004l
+
+$ python3 main.py
 
 === Python 기초 퀴즈 ===
 1. 퀴즈 풀기
@@ -639,7 +685,8 @@ python -m json.tool: error: argument infile: can't open 'quiz-game/state.json': 
 5. 종료
 선택: 5
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hpython3 main.pyquiz-game/main.py < /dev/null[P[19C [20D[P[19C [20D[P[18C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[P[19C [20D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[?2004l
+
+$ python3 main.py < /dev/null
 
 === Python 기초 퀴즈 ===
 1. 퀴즈 풀기
@@ -647,18 +694,22 @@ python -m json.tool: error: argument infile: can't open 'quiz-game/state.json': 
 3. 퀴즈 목록
 4. 점수 확인
 5. 종료
-선택: 
+선택:
 입력이 종료되었습니다.
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h[7mquiz_backup_dir="$(mktemp -d)"[27m[30D[27mq[27mu[27mi[27mz[27m_[27mb[27ma[27mc[27mk[27mu[27mp[27m_[27md[27mi[27mr[27m=[27m"[27m$[27m([27mm[27mk[27mt[27me[27mm[27mp[27m [27m-[27md[27m)[27m"[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h[7mp quiz-game/state.json "$quiz_backup_dir/state.json"[27m[52D[27mp[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[27m [27m"[27m$[27mq[27mu[27mi[27mz[27m_[27mb[27ma[27mc[27mk[27mu[27mp[27m_[27md[27mi[27mr[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[27m"[27D[22D[22C[21D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[10C[28C                                                  ㅊㅇ     ccd ..[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir CODYSSEY % [K[?2004h[7mcp quiz-game/state.json "$quiz_backup_dir/state.json"[27m
-[K[A[42C[27mc[27mp[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[27m [27m"[27m$[27mq[27mu[27mi[27mz[27m_[27mb[27ma[27mc[27mk[27mu[27mp[27m_[27md[27mi[27mr[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[27m"[1B[K[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir CODYSSEY % [K[?2004hggit comm    add main     ./
-[Jmission_lab/  quiz-game/[A[0m[27m[24m[42Cgit add ./[Kquiz-game[1m/[0m[0m/main.py[1m [0m[0m [?2004l
-[Jfatal: not a git repository (or any of the parent directories): .git
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir CODYSSEY % [K[?2004hgit add ./quiz-game/main.py[1C[1C[1C[1C[1C[1C[1C[27D                           [27Dccd c  [7mprintf '{' > quiz-game/state.json[27m[33D[27mp[27mr[27mi[27mn[27mt[27mf[27m [27m'[27m{[27m'[27m [27m>[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir CODYSSEY % [K[?2004h[7mpython3 quiz-game/main.py[27m[25D[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27mm[27ma[27mi[27mn[27m.[27mp[27my[?2004l
+
+$ quiz_backup_dir="$(mktemp -d)"
+
+$ cd ..
+
+$ cp quiz-game/state.json "$quiz_backup_dir/state.json"
+
+$ git add ./quiz-game/main.py
+fatal: not a git repository (or any of the parent directories): .git
+
+$ printf '{' > quiz-game/state.json
+
+$ python3 quiz-game/main.py
 state.json이 손상되었습니다. 기본 퀴즈로 복구합니다.
 
 === Python 기초 퀴즈 ===
@@ -669,8 +720,10 @@ state.json이 손상되었습니다. 기본 퀴즈로 복구합니다.
 5. 종료
 선택: 5
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir CODYSSEY % [K[?2004h[7mprintf '%s\n' '{"quizzes":[],"best_score":null}' > quiz-game/state.json[27m[71D[27mp[27mr[27mi[27mn[27mt[27mf[27m [27m'[27m%[27ms[27m\[27mn[27m'[27m [27m'[27m{[27m"[27mq[27mu[27mi[27mz[27mz[27me[27ms[27m"[27m:[27m[[27m][27m,[27m"[27mb[27me[27ms[27mt[27m_[27ms[27mc[27mo[27mr[27me[27m"[27m:[27mn[27mu[27ml[27ml[27m}[27m'[27m [27m>[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir CODYSSEY % [K[?2004h[7mpython3 quiz-game/main.py[27m[25D[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27mm[27ma[27mi[27mn[27m.[27mp[27my[?2004l
+
+$ printf '%s\n' '{"quizzes":[],"best_score":null}' > quiz-game/state.json
+
+$ python3 quiz-game/main.py
 
 === Python 기초 퀴즈 ===
 1. 퀴즈 풀기
@@ -680,65 +733,82 @@ state.json이 손상되었습니다. 기본 퀴즈로 복구합니다.
 5. 종료
 선택: 5
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir CODYSSEY % [K[?2004h[7mcp "$quiz_backup_dir/state.json" quiz-game/state.json[27m[53D[27mc[27mp[27m [27m"[27m$[27mq[27mu[27mi[27mz[27m_[27mb[27ma[27mc[27mk[27mu[27mp[27m_[27md[27mi[27mr[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[27m"[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27ms[27mt[27ma[27mt[27me[27m.[27mj[27ms[27mo[27mn[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir CODYSSEY % [K[?2004hggit check-in gnore              g  ㅊㅇ     ccd s 
-[Jmission_lab/  quiz-game/[A[0m[27m[24m[42Ccd[K[1Cquiz-game[1m/[0m[0m [?2004l
-[J[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hcchc  ggit chech k0 -ignore state.json[1m [0m[0m [?2004l
+
+$ cp "$quiz_backup_dir/state.json" quiz-game/state.json
+
+$ cd quiz-game
+
+$ git check-ignore state.json
 state.json
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h[7madd -- quiz-game/main.py quiz-game/quiz.py[27m[42D[27ma[27md[27md[27m [27m-[27m-[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27mm[27ma[27mi[27mn[27m.[27mp[27my[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[27m/[27mq[27mu[27mi[27mz[27m.[27mp[27my[16D[18D햣add --[16P[11Cmain[3C quiz-game/quiz.py[42D add --[17P[11Cmain[3C quiz-game/quiz.py[42D[P[42C [43D[P[P[42C  [44Dgadd --[17P[11Cmain[3C quiz-game/quiz.py[42Dgiadd --[17P[11Cmain[3C quiz-game/quiz.py[42Dtadd --[17P[11Cmain[3C quiz-game/quiz.py[42D add --[17P[11Cmain[3C quiz-game/quiz.py[42D[?2004l
+
+$ git add -- quiz-game/main.py quiz-game/quiz.py
 fatal: pathspec 'quiz-game/main.py' did not match any files
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hgit add -- quiz-game/main.py quiz-game/quiz.py[16D[18D[18C[P[25C [26D[P[25C [26D[P[24C [26D[P[25C [26D[P[25C [26D[P[25C [26D[P[25C [26D[P[25C [26D[P[25C [26D[P[25C [26D[P[25C [26D[P[25C [26D[P[25C [26D[P[25C [26D main.py quiz-game/quiz.py[25D[8C[17C[15D[17Cquiz.py [8Dquiz.py [8Dquiz.py [8Dquiz.py [8Dquiz.py [8Dquiz.py [8Dquiz.py [8Dquiz.py [8Dquiz.py [8Duiz.py [8Dquiz.py [8D quiz.py[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggi t commit -m [7m"Feat: UTF-8 JSON 저장과 복구 구현"[27m[35D[27m"[27mF[27me[27ma[27mt[27m:[27m [27mU[27mT[27mF[27m-[27m8[27m [27mJ[27mS[27mO[27mN[27m [27m저[27m[27m장[27m[27m과[27m[27m [27m복[27m[27m구[27m[27m [27m구[27m[27m현[27m[27m"[?2004l
+
+$ git add main.py quiz.py
+
+$ git commit -m "Feat: UTF-8 JSON 저장과 복구 구현"
 [main 8c56571] Feat: UTF-8 JSON 저장과 복구 구현
  2 files changed, 80 insertions(+), 3 deletions(-)
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hccd ..  c  ggit add Re EADME.md[1m [0m[0m GUIDE.md[1m [0m[0m [?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h햣   ggit coom  mmit -m ' "[7m"Docs: codyssey 루트 실행 방법과 단계별 가이드 정리"[27m[52D[27m"[27mD[27mo[27mc[27ms[27m:[27m [27mc[27mo[27md[27my[27ms[27ms[27me[27my[27m [27m루[27m[27m트[27m[27m [27m실[27m[27m행[27m[27m [27m방[27m[27m법[27m[27m과[27m[27m [27m단[27m[27m계[27m[27m별[27m[27m [27m가[27m[27m이[27m[27m드[27m[27m [27m정[27m[27m리[27m[27m"[9D[P[51C [53D[?2004l
+
+$ git add README.md GUIDE.md
+
+$ git commit -m "Docs: codyssey 루트 실행 방법과 단계별 가이드 정리"
 On branch main
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git restore <file>..." to discard changes in working directory)
-	[31mmodified:   evidence/execution.log[m
+        modified:   evidence/execution.log
 
 no changes added to commit (use "git add" and/or "git commit -a")
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hggit push orin gin main[?2004l
+
+$ git push origin main
 Enumerating objects: 27, done.
-Counting objects:   3% (1/27)Counting objects:   7% (2/27)Counting objects:  11% (3/27)Counting objects:  14% (4/27)Counting objects:  18% (5/27)Counting objects:  22% (6/27)Counting objects:  25% (7/27)Counting objects:  29% (8/27)Counting objects:  33% (9/27)Counting objects:  37% (10/27)Counting objects:  40% (11/27)Counting objects:  44% (12/27)Counting objects:  48% (13/27)Counting objects:  51% (14/27)Counting objects:  55% (15/27)Counting objects:  59% (16/27)Counting objects:  62% (17/27)Counting objects:  66% (18/27)Counting objects:  70% (19/27)Counting objects:  74% (20/27)Counting objects:  77% (21/27)Counting objects:  81% (22/27)Counting objects:  85% (23/27)Counting objects:  88% (24/27)Counting objects:  92% (25/27)Counting objects:  96% (26/27)Counting objects: 100% (27/27)Counting objects: 100% (27/27), done.
+Counting objects: 100% (27/27), done.
 Delta compression using up to 8 threads
-Compressing objects:   3% (1/26)Compressing objects:   7% (2/26)Compressing objects:  11% (3/26)Compressing objects:  15% (4/26)Compressing objects:  19% (5/26)Compressing objects:  23% (6/26)Compressing objects:  26% (7/26)Compressing objects:  30% (8/26)Compressing objects:  34% (9/26)Compressing objects:  38% (10/26)Compressing objects:  42% (11/26)Compressing objects:  46% (12/26)Compressing objects:  50% (13/26)Compressing objects:  53% (14/26)Compressing objects:  57% (15/26)Compressing objects:  61% (16/26)Compressing objects:  65% (17/26)Compressing objects:  69% (18/26)Compressing objects:  73% (19/26)Compressing objects:  76% (20/26)Compressing objects:  80% (21/26)Compressing objects:  84% (22/26)Compressing objects:  88% (23/26)Compressing objects:  92% (24/26)Compressing objects:  96% (25/26)Compressing objects: 100% (26/26)Compressing objects: 100% (26/26), done.
-Writing objects:   3% (1/26)Writing objects:   7% (2/26)Writing objects:  11% (3/26)Writing objects:  15% (4/26)Writing objects:  19% (5/26)Writing objects:  23% (6/26)Writing objects:  26% (7/26)Writing objects:  30% (8/26)Writing objects:  34% (9/26)Writing objects:  38% (10/26)Writing objects:  42% (11/26)Writing objects:  46% (12/26)Writing objects:  50% (13/26)Writing objects:  53% (14/26)Writing objects:  57% (15/26)Writing objects:  61% (16/26)Writing objects:  65% (17/26)Writing objects:  69% (18/26)Writing objects:  73% (19/26)Writing objects:  76% (20/26)Writing objects:  80% (21/26)Writing objects:  84% (22/26)Writing objects:  88% (23/26)Writing objects:  92% (24/26)Writing objects:  96% (25/26)Writing objects: 100% (26/26)Writing objects: 100% (26/26), 5.46 KiB | 5.46 MiB/s, done.
+Compressing objects: 100% (26/26), done.
+Writing objects: 100% (26/26), 5.46 KiB | 5.46 MiB/s, done.
 Total 26 (delta 16), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas:   0% (0/16)[Kremote: Resolving deltas:   6% (1/16)[Kremote: Resolving deltas:  12% (2/16)[Kremote: Resolving deltas:  18% (3/16)[Kremote: Resolving deltas:  25% (4/16)[Kremote: Resolving deltas:  31% (5/16)[Kremote: Resolving deltas:  37% (6/16)[Kremote: Resolving deltas:  43% (7/16)[Kremote: Resolving deltas:  50% (8/16)[Kremote: Resolving deltas:  56% (9/16)[Kremote: Resolving deltas:  62% (10/16)[Kremote: Resolving deltas:  68% (11/16)[Kremote: Resolving deltas:  75% (12/16)[Kremote: Resolving deltas:  81% (13/16)[Kremote: Resolving deltas:  87% (14/16)[Kremote: Resolving deltas:  93% (15/16)[Kremote: Resolving deltas: 100% (16/16)[Kremote: Resolving deltas: 100% (16/16), completed with 1 local object.[K
+remote: Resolving deltas: 100% (16/16), completed with 1 local object.
 To https://github.com/JinsolJung/codyssey-quiz.git
    5e8d4f9..8c56571  main -> main
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h[7mgit log --oneline --graph --all[27m[31D[27mg[27mi[27mt[27m [27ml[27mo[27mg[27m [27m-[27m-[27mo[27mn[27me[27ml[27mi[27mn[27me[27m [27m-[27m-[27mg[27mr[27ma[27mp[27mh[27m [27m-[27m-[27ma[27ml[27ml[?2004l
-[?1h=* [33m8c56571[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Feat: UTF-8 JSON 저장과 복구 구현[m
-* [33m037ccde[m Feat: 최고 정답 수 갱신과 조회 구현[m
-* [33m9784d22[m Feat: 퀴즈 목록과 문제 수 출력[m
-* [33mae3bf42[m Feat: 문제와 선택지를 입력받아 퀴즈 추가[m
-*   [33m987ad5c[m Merge: 퀴즈 풀기 기능 병합[m
-[32m|[m[33m\[m  [m
-[32m|[m * [33m603fb59[m[33m ([m[1;32mfeature/quiz-play[m[33m)[m Feat: 퀴즈 출제와 채점 구현[m
-[32m|[m[32m/[m  [m
-* [33m0f503ff[m Refactor: QuizGame에 메뉴와 문제 목록 모으기[m
-* [33mc1aa975[m Feat: Python 기초 퀴즈 5문제 추가[m
-* [33m0a19357[m Feat: 콘솔 메뉴와 숫자 입력 구현[m
-* [33m5e8d4f9[m Docs: 퀴즈 프로젝트 README 추가[m
-[K[?1l>[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h[7mgit rev-list --count --no-merges main -- quiz-game[27m[50D[27mg[27mi[27mt[27m [27mr[27me[27mv[27m-[27ml[27mi[27ms[27mt[27m [27m-[27m-[27mc[27mo[27mu[27mn[27mt[27m [27m-[27m-[27mn[27mo[27m-[27mm[27me[27mr[27mg[27me[27ms[27m [27mm[27ma[27mi[27mn[27m [27m-[27m-[27m [27mq[27mu[27mi[27mz[27m-[27mg[27ma[27mm[27me[?2004l
+
+$ git log --oneline --graph --all
+* 8c56571 (HEAD -> main, origin/main) Feat: UTF-8 JSON 저장과 복구 구현
+* 037ccde Feat: 최고 정답 수 갱신과 조회 구현
+* 9784d22 Feat: 퀴즈 목록과 문제 수 출력
+* ae3bf42 Feat: 문제와 선택지를 입력받아 퀴즈 추가
+*   987ad5c Merge: 퀴즈 풀기 기능 병합
+|\
+| * 603fb59 (feature/quiz-play) Feat: 퀴즈 출제와 채점 구현
+|/
+* 0f503ff Refactor: QuizGame에 메뉴와 문제 목록 모으기
+* c1aa975 Feat: Python 기초 퀴즈 5문제 추가
+* 0a19357 Feat: 콘솔 메뉴와 숫자 입력 구현
+* 5e8d4f9 Docs: 퀴즈 프로젝트 README 추가
+
+$ git rev-list --count --no-merges main -- quiz-game
 0
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h[7mpwd[27m
-[7mpython3 --version[27m[K
-[7mgit --version[27m[K
-[7mgit branch --show-current[27m[K
-[7mgit config --get user.name[27m[K
-[7mgit remote -v[27m[K[5A[30C[27mp[27mw[27md[1B[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27m-[27mv[27me[27mr[27ms[27mi[27mo[27mn[1B[27mg[27mi[27mt[27m [27m-[27m-[27mv[27me[27mr[27ms[27mi[27mo[27mn[1B[27mg[27mi[27mt[27m [27mb[27mr[27ma[27mn[27mc[27mh[27m [27m-[27m-[27ms[27mh[27mo[27mw[27m-[27mc[27mu[27mr[27mr[27me[27mn[27mt[1B[27mg[27mi[27mt[27m [27mc[27mo[27mn[27mf[27mi[27mg[27m [27m-[27m-[27mg[27me[27mt[27m [27mu[27ms[27me[27mr[27m.[27mn[27ma[27mm[27me[1B[27mg[27mi[27mt[27m [27mr[27me[27mm[27mo[27mt[27me[27m [27m-[27mv[?2004l
+
+$ pwd
 /Users/dhjung/CODYSSEY/quiz-game
+
+$ python3 --version
 Python 3.10.11
+
+$ git --version
 git version 2.47.0
+
+$ git branch --show-current
 main
+
+$ git config --get user.name
 JinsolJung
-origin	https://github.com/JinsolJung/codyssey-quiz.git (fetch)
-origin	https://github.com/JinsolJung/codyssey-quiz.git (push)
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hㅔㅛ쇄ㅜ        t ppython main.py[?2004l
+
+$ git remote -v
+origin  https://github.com/JinsolJung/codyssey-quiz.git (fetch)
+origin  https://github.com/JinsolJung/codyssey-quiz.git (push)
+
+$ python main.py
 
 === Python 기초 퀴즈 ===
 1. 퀴즈 풀기
@@ -754,7 +824,7 @@ len([10, 20, 30])의 결과는?
   2. 3
   3. 4
   4. 30
-정답 번호 (1~4): 3 2
+정답 번호 (1~4): 2
 정답입니다!
 
 [문제 2]
@@ -813,7 +883,7 @@ input()이 반환하는 자료형은?
 4. 점수 확인
 5. 종료
 선택: 2
-문제: qoem    배드민턴을 제일 잘하는 사람은?
+문제: 배드민턴을 제일 잘하는 사람은?
 선택지 1: 한석진
 선택지 2: 정다혜
 선택지 3: 강현석
@@ -855,17 +925,58 @@ input()이 반환하는 자료형은?
 5. 종료
 선택: 5
 퀴즈 게임을 종료합니다.
-[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004h햣   [7mgit log --oneline --graph[27m[25D[27mg[27mi[27mt[27m [27ml[27mo[27mg[27m [27m-[27m-[27mo[27mn[27me[27ml[27mi[27mn[27me[27m [27m-[27m-[27mg[27mr[27ma[27mp[27mh[?2004l
-[?1h=* [33m8c56571[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Feat: UTF-8 JSON 저장과 복구 구현[m
-* [33m037ccde[m Feat: 최고 정답 수 갱신과 조회 구현[m
-* [33m9784d22[m Feat: 퀴즈 목록과 문제 수 출력[m
-* [33mae3bf42[m Feat: 문제와 선택지를 입력받아 퀴즈 추가[m
-*   [33m987ad5c[m Merge: 퀴즈 풀기 기능 병합[m
-[32m|[m[33m\[m  [m
-[32m|[m * [33m603fb59[m[33m ([m[1;32mfeature/quiz-play[m[33m)[m Feat: 퀴즈 출제와 채점 구현[m
-[32m|[m[32m/[m  [m
-* [33m0f503ff[m Refactor: QuizGame에 메뉴와 문제 목록 모으기[m
-* [33mc1aa975[m Feat: Python 기초 퀴즈 5문제 추가[m
-* [33m0a19357[m Feat: 콘솔 메뉴와 숫자 입력 구현[m
-* [33m5e8d4f9[m Docs: 퀴즈 프로젝트 README 추가[m
-[K[?1l>[1m[7m%[27m[1m[0m                                                                                                                                                  [0m[27m[24m[Jdhjung@jeongdahyeui-MacBookAir quiz-game % [K[?2004hi ggit add .     g  ggit  g  ggit add . --e        g  
+
+$ git log --oneline --graph
+* 8c56571 (HEAD -> main, origin/main) Feat: UTF-8 JSON 저장과 복구 구현
+* 037ccde Feat: 최고 정답 수 갱신과 조회 구현
+* 9784d22 Feat: 퀴즈 목록과 문제 수 출력
+* ae3bf42 Feat: 문제와 선택지를 입력받아 퀴즈 추가
+*   987ad5c Merge: 퀴즈 풀기 기능 병합
+|\
+| * 603fb59 (feature/quiz-play) Feat: 퀴즈 출제와 채점 구현
+|/
+* 0f503ff Refactor: QuizGame에 메뉴와 문제 목록 모으기
+* c1aa975 Feat: Python 기초 퀴즈 5문제 추가
+* 0a19357 Feat: 콘솔 메뉴와 숫자 입력 구현
+* 5e8d4f9 Docs: 퀴즈 프로젝트 README 추가
+
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .DS_Store
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+$ git log
+commit 035f8e70c26e93f13921b59cd0e8af8ce1bc1a37 (HEAD -> main)
+Author: JinsolJung <ds5upnbb@naver.com>
+Date:   Wed Nov 11 14:56:53 2026 +0900
+
+    Docs:  결과 스크린샷 추가
+
+commit 8c56571b3e11f71065b08daebb2bd089bf900d19 (origin/main)
+Author: JinsolJung <ds5upnbb@naver.com>
+Date:   Wed Nov 11 14:30:54 2026 +0900
+
+    Feat: UTF-8 JSON 저장과 복구 구현
+
+commit 037ccde8dedca9e67f73f74746e580420846107d
+Author: JinsolJung <ds5upnbb@naver.com>
+Date:   Wed Nov 11 13:51:46 2026 +0900
+
+    Feat: 최고 정답 수 갱신과 조회 구현
+
+commit 9784d22241b5569d31a6b7a094e5bfd26876baab
+Author: JinsolJung <ds5upnbb@naver.com>
+
+$ git push origin main
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 545.12 KiB | 36.34 MiB/s, done.
+Total 12 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JinsolJung/codyssey-quiz.git
+   8c56571..035f8e7  main -> main
